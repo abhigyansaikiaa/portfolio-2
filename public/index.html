@@ -26,29 +26,47 @@
     <!-- Main css -->
     <link rel="stylesheet" href="assets-unifex/css/main.css" />
     <style>
+      /* Custom overrides for Abhigyan's portfolio */
       .footer-three-bottom-title { font-size: clamp(3rem, 12vw, 12rem); }
+      .banner-three-man img { border-radius: 50%; object-fit: cover; }
     </style>
   </head>
 
   <body class="tw-magic-cursor">
-    <!--==================== Preloader ====================-->
+    <!--==================== Preloader Start ====================-->
     <div class="preloader">
       <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
         <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
       </svg>
       <div class="preloader-heading">
         <div class="load-text">
-          <span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span>
+          <span>L</span>
+          <span>o</span>
+          <span>a</span>
+          <span>d</span>
+          <span>i</span>
+          <span>n</span>
+          <span>g</span>
         </div>
       </div>
     </div>
+    <!--==================== Preloader End ====================-->
 
+    <!--==================== Overlay Start ====================-->
     <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay ====================-->
     <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
 
     <!--==================== Magic Cursor ====================-->
-    <div id="magic-cursor"><div id="ball"></div></div>
+    <div id="magic-cursor">
+      <div id="ball"></div>
+    </div>
+    <!--==================== Magic Cursor End ====================-->
 
+    <!-- Custom Toast Message -->
     <div id="toast-container"></div>
 
     <!-- Scroll to Top -->
@@ -60,7 +78,7 @@
       </button>
     </div>
 
-    <!-- ==================== Off-Canvas Menu ==================== -->
+    <!-- ==================== Off-Canvas Mobile Menu ==================== -->
     <div class="tw-offcanvas-2-area p-relative">
       <div class="tw-offcanvas-2-bg is-left left-box"></div>
       <div class="tw-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
@@ -74,7 +92,10 @@
               <button class="tw-offcanvas-2-close-btn">
                 <span class="text"><span class="text-white">close</span></span>
                 <span class="d-inline-block"><span>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect width="32.621" height="1.00918" transform="matrix(0.704882 0.709325 -0.704882 0.709325 1.0061 0)" fill="currentcolor"/><rect width="32.621" height="1.00918" transform="matrix(0.704882 -0.709325 0.704882 0.709325 0 23.2842)" fill="currentcolor"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32.621" height="1.00918" transform="matrix(0.704882 0.709325 -0.704882 0.709325 1.0061 0)" fill="currentcolor"/>
+                    <rect width="32.621" height="1.00918" transform="matrix(0.704882 -0.709325 0.704882 0.709325 0 23.2842)" fill="currentcolor"/>
+                  </svg>
                 </span></span>
               </button>
             </div>
@@ -95,7 +116,10 @@
             <button class="tw-offcanvas-2-close-btn">
               <span class="text"><span>close</span></span>
               <span class="d-inline-block"><span>
-                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M9.80859 9.80762L28.1934 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.80859 28.1924L28.1934 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.80859 9.80762L28.1934 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9.80859 28.1924L28.1934 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </span></span>
             </button>
           </div>
@@ -135,29 +159,53 @@
         </div>
       </div>
     </div>
+    <!-- ==================== Off-Canvas Menu End ==================== -->
 
     <!-- ==================== Header ==================== -->
     <header class="header header-two header-three tw-transition-all tw-z-99 position-relative">
       <div class="container tw-container-1800-px">
         <nav class="d-flex align-items-center justify-content-between position-relative">
+          <!-- Logo -->
           <div class="header-three-logo tw-rounded-md">
             <a href="#" class="link fw-bold" style="font-size:1.4rem;text-decoration:none;color:inherit;">ABHIGYAN</a>
           </div>
+
+          <!-- Social icons (desktop) -->
           <div class="header-three-social d-none d-lg-block">
             <ul class="d-flex tw-gap-205">
-              <li><a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md" href="https://github.com/abhigyansaikiaa" target="_blank" rel="noopener noreferrer"><i class="ph-bold ph-github-logo"></i></a></li>
-              <li><a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md" href="https://www.linkedin.com/in/abhigyan-saikia-26641227b" target="_blank" rel="noopener noreferrer"><i class="ph-bold ph-linkedin-logo"></i></a></li>
-              <li><a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md" href="mailto:abhigyannsaikia@gmail.com"><i class="ph-bold ph-envelope"></i></a></li>
+              <li>
+                <a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                   href="https://github.com/abhigyansaikiaa" target="_blank" rel="noopener noreferrer">
+                  <i class="ph-bold ph-github-logo"></i>
+                </a>
+              </li>
+              <li>
+                <a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                   href="https://www.linkedin.com/in/abhigyan-saikia-26641227b" target="_blank" rel="noopener noreferrer">
+                  <i class="ph-bold ph-linkedin-logo"></i>
+                </a>
+              </li>
+              <li>
+                <a class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                   href="mailto:abhigyannsaikia@gmail.com">
+                  <i class="ph-bold ph-envelope"></i>
+                </a>
+              </li>
             </ul>
           </div>
+
+          <!-- Header right -->
           <div class="header-right d-flex align-items-center tw-gap-705">
+            <!-- Toggle button -->
             <div class="header-three-menu">
               <button class="tw-offcanvas-open-btn tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center tw-transition-3 tw-rounded-md">
                 <span><img class="tw-transition-3" src="assets-unifex/images/icons/header-three-toggle.svg" alt="toggle" /></span>
               </button>
             </div>
+            <!-- Download CV button -->
             <div class="header-three-button d-none d-md-block">
-              <a class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md" href="mailto:abhigyannsaikia@gmail.com">
+              <a class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md"
+                 href="mailto:abhigyannsaikia@gmail.com">
                 Let's Talk
                 <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
               </a>
@@ -166,23 +214,26 @@
         </nav>
       </div>
     </header>
+    <!-- ==================== Header End ==================== -->
 
     <div id="smooth-wrapper">
       <div id="smooth-content">
 
-        <!-- ==================== HERO ==================== -->
+        <!-- ==================== HERO / BANNER ==================== -->
         <section class="banner-three-area">
           <div class="container tw-container-1800-px">
             <div class="row">
               <div class="col-xl-12">
                 <div class="banner-three-wrapper position-relative z-1">
+                  <!-- Center person image -->
                   <div class="banner-three-man position-absolute start-50 translate-middle-x">
-                    <img src="abhigyan.jpeg" alt="Abhigyan Saikia" style="max-width:320px;width:100%;border-radius:50%;object-fit:cover;" />
+                    <img src="abhigyan.jpeg" alt="Abhigyan Saikia" style="max-width:340px;width:100%;border-radius:50%;object-fit:cover;" />
                   </div>
-                  <h1 class="banner-three-title text-black tw-mb-30">developer</h1>
-                  <div class="banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1">
 
-                    <!-- Left bio -->
+                  <h1 class="banner-three-title text-black tw-mb-30">developer</h1>
+
+                  <div class="banner-three-wrap d-flex justify-content-between align-items-end position-relative z-1">
+                    <!-- Left bio card -->
                     <div class="banner-three-left tw-rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                       <h2 class="banner-three-left-title tw-text-3xl tw-mb-6">
                         Hello! I'm Abhigyan<br />
@@ -190,10 +241,22 @@
                       </h2>
                       <div class="banner-three-list">
                         <ul>
-                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"><span><img src="assets-unifex/images/icons/banner-three-pluse.svg" alt="+" /></span>Full Stack Development</li>
-                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"><span><img src="assets-unifex/images/icons/banner-three-pluse.svg" alt="+" /></span>Web Application Building</li>
-                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"><span><img src="assets-unifex/images/icons/banner-three-pluse.svg" alt="+" /></span>Product Development</li>
-                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4"><span><img src="assets-unifex/images/icons/banner-three-pluse.svg" alt="+" /></span>Automation & Tooling</li>
+                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4">
+                            <span><img src="assets-unifex/images/icons/banner-three-pluse.svg" alt="plus" /></span>
+                            Full Stack Development
+                          </li>
+                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4">
+                            <span><img src="assets-unifex/images/icons/banner-three-pluse.svg" alt="plus" /></span>
+                            Web Application Building
+                          </li>
+                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4">
+                            <span><img src="assets-unifex/images/icons/banner-three-pluse.svg" alt="plus" /></span>
+                            Product Development
+                          </li>
+                          <li class="tw-text-lg fw-medium d-inline-flex align-items-center tw-gap-2 tw-mb-4">
+                            <span><img src="assets-unifex/images/icons/banner-three-pluse.svg" alt="plus" /></span>
+                            Automation & Tooling
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -204,7 +267,8 @@
                         Building real products from concept to working software.
                       </h3>
                       <div class="banner-three-button">
-                        <a class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg" href="#works">
+                        <a class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-lg"
+                           href="#works">
                           view projects
                           <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
                         </a>
@@ -227,6 +291,7 @@
                       </div>
                     </div>
 
+                    <!-- Shape -->
                     <div class="banner-three-line-shape position-absolute start-50 translate-middle-x z-n1">
                       <img src="assets-unifex/images/shapes/banner-three-shape.png" alt="shape" />
                       <div class="banner-three-carcel-shape"><div><span></span></div></div>
@@ -237,6 +302,7 @@
             </div>
           </div>
         </section>
+        <!-- ==================== HERO END ==================== -->
 
         <!-- ==================== ABOUT ==================== -->
         <section id="about" class="about-three-area py-120 position-relative z-1">
@@ -254,8 +320,10 @@
               </div>
               <div class="row">
                 <div class="col-xl-6">
-                  <div class="about-three-thumb w-100 tw-clip-anim tw-rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <img class="tw-anim-img w-100 tw-rounded-lg" data-animate="true" src="abhigyan.jpeg" alt="Abhigyan Saikia" style="object-fit:cover;max-height:600px;" />
+                  <div class="about-three-thumb w-100 tw-clip-anim tw-rounded-lg"
+                       data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img class="tw-anim-img w-100 tw-rounded-lg" data-animate="true"
+                         src="abhigyan.jpeg" alt="Abhigyan Saikia" style="object-fit:cover;max-height:600px;" />
                   </div>
                 </div>
                 <div class="col-xl-6">
@@ -272,13 +340,15 @@
                         without unnecessary complexity.
                       </p>
                       <p class="tw-text-xl tw-mb-10">
-                        From concept to launch, I approach every project with a focus on clean architecture,
-                        fast performance, and a product mindset. I aim to ship software that works well and lasts.
+                        I approach every project with a focus on clean architecture, fast performance,
+                        and a product mindset. From internal tools to public platforms, I aim to ship
+                        software that works well and lasts.
                       </p>
                     </div>
                     <div class="about-three-counter d-inline-block">
                       <div class="tw-hover-btn-wrapper d-inline-block">
-                        <a class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200" href="#works">
+                        <a class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200"
+                           href="#works">
                           <span class="d-flex flex-column justify-content-center">
                             <span class="tw-btn-circle-icon text-heading tw-text-8 tw-transition-3 font-heading fw-medium">13+</span>
                             <span class="text-heading fw-bold text-center tw-transition-3 tw-text-2xl fw-medium">Projects Built</span>
@@ -293,9 +363,11 @@
             </div>
           </div>
           <div>
-            <img class="about-three-shape position-absolute start-0 w-100" src="assets-unifex/images/shapes/about-three-shape.png" alt="shape" />
+            <img class="about-three-shape position-absolute start-0 w-100"
+                 src="assets-unifex/images/shapes/about-three-shape.png" alt="shape" />
           </div>
         </section>
+        <!-- ==================== ABOUT END ==================== -->
 
         <!-- ==================== SERVICES MARQUEE ==================== -->
         <div class="marquee tw-pt-17 bg-black">
@@ -315,12 +387,22 @@
               <div class="col-12">
                 <div class="service-three-wrapper">
 
+                  <!-- Service 01 -->
                   <div class="service-three-single" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
                     <div class="service-three-item d-flex justify-content-between align-items-center">
                       <div class="service-three-content d-flex tw-gap-14">
-                        <div><span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">01 <img class="tw-transition-3" src="assets-unifex/images/icons/service-three-arrow.svg" alt="arrow" /></span></div>
                         <div>
-                          <h2 class="service-three-title tw-text-15 text-white tw-mb-4"><a href="#contact">Full Stack Development</a></h2>
+                          <span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">
+                            01
+                            <img class="tw-transition-3" src="assets-unifex/images/icons/service-three-arrow.svg" alt="arrow" />
+                          </span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2 class="service-three-title tw-text-15 text-white tw-mb-4">
+                              <a href="#contact">Full Stack Development</a>
+                            </h2>
+                          </div>
                           <div class="portfolio-list portfolio-two-list">
                             <ul class="d-flex tw-gap-205 flex-wrap">
                               <li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#">React</a></li>
@@ -330,16 +412,28 @@
                           </div>
                         </div>
                       </div>
-                      <div class="service-three-thumb"><img src="assets-unifex/images/thumbs/service-three-thumb1.png" alt="Full Stack" /></div>
+                      <div class="service-three-thumb">
+                        <img src="assets-unifex/images/thumbs/service-three-thumb1.png" alt="Full Stack" />
+                      </div>
                     </div>
                   </div>
 
+                  <!-- Service 02 -->
                   <div class="service-three-single ms-auto" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">
                     <div class="service-three-item d-flex justify-content-between align-items-center">
                       <div class="service-three-content d-flex tw-gap-14">
-                        <div><span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">02 <img class="tw-transition-3" src="assets-unifex/images/icons/service-three-arrow.svg" alt="arrow" /></span></div>
                         <div>
-                          <h2 class="service-three-title tw-text-15 text-white tw-mb-4"><a href="#contact">Web Application</a></h2>
+                          <span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">
+                            02
+                            <img class="tw-transition-3" src="assets-unifex/images/icons/service-three-arrow.svg" alt="arrow" />
+                          </span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2 class="service-three-title tw-text-15 text-white tw-mb-4">
+                              <a href="#contact">Web Application</a>
+                            </h2>
+                          </div>
                           <div class="portfolio-list portfolio-two-list">
                             <ul class="d-flex tw-gap-205 flex-wrap">
                               <li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#">SaaS</a></li>
@@ -349,16 +443,28 @@
                           </div>
                         </div>
                       </div>
-                      <div class="service-three-thumb"><img src="assets-unifex/images/thumbs/service-three-thumb2.png" alt="Web App" /></div>
+                      <div class="service-three-thumb">
+                        <img src="assets-unifex/images/thumbs/service-three-thumb2.png" alt="Web App" />
+                      </div>
                     </div>
                   </div>
 
+                  <!-- Service 03 -->
                   <div class="service-three-single" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">
                     <div class="service-three-item d-flex justify-content-between align-items-center">
                       <div class="service-three-content d-flex tw-gap-14">
-                        <div><span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">03 <img class="tw-transition-3" src="assets-unifex/images/icons/service-three-arrow.svg" alt="arrow" /></span></div>
                         <div>
-                          <h2 class="service-three-title tw-text-15 text-white tw-mb-4"><a href="#contact">Product Building</a></h2>
+                          <span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">
+                            03
+                            <img class="tw-transition-3" src="assets-unifex/images/icons/service-three-arrow.svg" alt="arrow" />
+                          </span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2 class="service-three-title tw-text-15 text-white tw-mb-4">
+                              <a href="#contact">Product Building</a>
+                            </h2>
+                          </div>
                           <div class="portfolio-list portfolio-two-list">
                             <ul class="d-flex tw-gap-205 flex-wrap">
                               <li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#">Concept to Launch</a></li>
@@ -367,16 +473,28 @@
                           </div>
                         </div>
                       </div>
-                      <div class="service-three-thumb"><img src="assets-unifex/images/thumbs/service-three-thumb3.png" alt="Product" /></div>
+                      <div class="service-three-thumb">
+                        <img src="assets-unifex/images/thumbs/service-three-thumb3.png" alt="Product" />
+                      </div>
                     </div>
                   </div>
 
+                  <!-- Service 04 -->
                   <div class="service-three-single ms-auto" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
                     <div class="service-three-item d-flex justify-content-between align-items-center">
                       <div class="service-three-content d-flex tw-gap-14">
-                        <div><span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">04 <img class="tw-transition-3" src="assets-unifex/images/icons/service-three-arrow.svg" alt="arrow" /></span></div>
                         <div>
-                          <h2 class="service-three-title tw-text-15 text-white tw-mb-4"><a href="#contact">Automation & Tooling</a></h2>
+                          <span class="service-three-number text-white tw-text-xl d-inline-flex align-items-center tw-gap-3 lh-1 tw-mt-5 tw-transition-3">
+                            04
+                            <img class="tw-transition-3" src="assets-unifex/images/icons/service-three-arrow.svg" alt="arrow" />
+                          </span>
+                        </div>
+                        <div>
+                          <div>
+                            <h2 class="service-three-title tw-text-15 text-white tw-mb-4">
+                              <a href="#contact">Automation & Tooling</a>
+                            </h2>
+                          </div>
                           <div class="portfolio-list portfolio-two-list">
                             <ul class="d-flex tw-gap-205 flex-wrap">
                               <li><a class="text-uppercase text-white tw-text-sm fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-heading tw-transition-3" href="#">Scripts</a></li>
@@ -386,7 +504,9 @@
                           </div>
                         </div>
                       </div>
-                      <div class="service-three-thumb"><img src="assets-unifex/images/thumbs/service-three-thumb4.png" alt="Automation" /></div>
+                      <div class="service-three-thumb">
+                        <img src="assets-unifex/images/thumbs/service-three-thumb4.png" alt="Automation" />
+                      </div>
                     </div>
                   </div>
 
@@ -395,8 +515,9 @@
             </div>
           </div>
         </section>
+        <!-- ==================== SERVICES END ==================== -->
 
-        <!-- ==================== WORKS GRID ==================== -->
+        <!-- ==================== WORKS (Portfolio Grid) ==================== -->
         <section id="works" class="portfolio-three-area py-120 position-relative z-1">
           <div class="portfolio-three-shape position-absolute top-0 z-n1">
             <h3 class="portfolio-three-shape-title">works</h3>
@@ -406,17 +527,30 @@
               <div class="col-xl-12">
                 <div class="portfolio-three-wrapper d-flex justify-content-between flex-wrap align-items-start position-relative z-1">
 
-                  <!-- ToolKB.in -->
+                  <!-- Work 01: ToolKB.in -->
                   <div class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper">
                     <div class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2">
                       <div class="tw-mb-6">
-                        <h2 class="tw-text-605 fw-medium tw-mb-4"><a class="hover-text-main-two-600" href="https://toolkb.in/" target="_blank" rel="noopener noreferrer">ToolKB.in</a></h2>
-                        <div class="portfolio-three-list portfolio-list"><ul class="d-flex tw-gap-205 flex-wrap">
-                          <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">WEB TOOL</a></li>
-                          <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">BROWSER-BASED</a></li>
-                        </ul></div>
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a class="hover-text-main-two-600" href="https://toolkb.in/" target="_blank" rel="noopener noreferrer">ToolKB.in</a>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">WEB TOOL</a></li>
+                            <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">BROWSER-BASED</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div><div class="portfolio-three-button"><a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white" href="https://toolkb.in/" target="_blank" rel="noopener noreferrer"><i class="ph ph-arrow-up-right"></i></a></div></div>
+                      <div>
+                        <div class="portfolio-three-button">
+                          <a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                             href="https://toolkb.in/" target="_blank" rel="noopener noreferrer">
+                            <i class="ph ph-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg" data-cursor="View">
                       <a class="d-block cursor-hide tw-rounded-lg" href="https://toolkb.in/" target="_blank" rel="noopener noreferrer">
@@ -425,17 +559,28 @@
                     </div>
                   </div>
 
-                  <!-- Arogya Relief -->
+                  <!-- Work 02: Arogya Relief -->
                   <div class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper">
                     <div class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2">
                       <div class="tw-mb-6">
-                        <h2 class="tw-text-605 fw-medium tw-mb-4"><a class="hover-text-main-two-600" href="https://www.arogyarelief.in/" target="_blank" rel="noopener noreferrer">Arogya Relief</a></h2>
-                        <div class="portfolio-three-list portfolio-list"><ul class="d-flex tw-gap-205 flex-wrap">
-                          <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">HEALTHCARE</a></li>
-                          <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">PLATFORM</a></li>
-                        </ul></div>
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a class="hover-text-main-two-600" href="https://www.arogyarelief.in/" target="_blank" rel="noopener noreferrer">Arogya Relief</a>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">HEALTHCARE</a></li>
+                            <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">PLATFORM</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="portfolio-three-button"><a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white" href="https://www.arogyarelief.in/" target="_blank" rel="noopener noreferrer"><i class="ph ph-arrow-up-right"></i></a></div>
+                      <div class="portfolio-three-button">
+                        <a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                           href="https://www.arogyarelief.in/" target="_blank" rel="noopener noreferrer">
+                          <i class="ph ph-arrow-up-right"></i>
+                        </a>
+                      </div>
                     </div>
                     <div class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg" data-cursor="View">
                       <a class="d-block cursor-hide tw-rounded-lg" href="https://www.arogyarelief.in/" target="_blank" rel="noopener noreferrer">
@@ -444,17 +589,27 @@
                     </div>
                   </div>
 
-                  <!-- Motion Subtitle Studio -->
+                  <!-- Work 03: Motion Subtitle Studio -->
                   <div class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper">
                     <div class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2">
                       <div class="tw-mb-6">
-                        <h2 class="tw-text-605 fw-medium tw-mb-4"><a class="hover-text-main-two-600" href="#">Motion Subtitle Studio</a></h2>
-                        <div class="portfolio-three-list portfolio-list"><ul class="d-flex tw-gap-205 flex-wrap">
-                          <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">CREATOR TOOL</a></li>
-                          <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">CAPTIONS</a></li>
-                        </ul></div>
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a class="hover-text-main-two-600" href="#">Motion Subtitle Studio</a>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">CREATOR TOOL</a></li>
+                            <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">CAPTIONS</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="portfolio-three-button"><a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white" href="#"><i class="ph ph-arrow-up-right"></i></a></div>
+                      <div class="portfolio-three-button">
+                        <a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white" href="#">
+                          <i class="ph ph-arrow-up-right"></i>
+                        </a>
+                      </div>
                     </div>
                     <div class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg" data-cursor="View">
                       <a class="d-block cursor-hide tw-rounded-lg" href="#">
@@ -463,17 +618,28 @@
                     </div>
                   </div>
 
-                  <!-- Brandcey -->
+                  <!-- Work 04: Brandcey -->
                   <div class="portfolio-three-item tw-rounded-lg tw-mb-705 portfolio-wrapper">
                     <div class="portfolio-three-wrap d-flex justify-content-between flex-wrap row-gap-2">
                       <div class="tw-mb-6">
-                        <h2 class="tw-text-605 fw-medium tw-mb-4"><a class="hover-text-main-two-600" href="https://www.brandcey.in/" target="_blank" rel="noopener noreferrer">Brandcey</a></h2>
-                        <div class="portfolio-three-list portfolio-list"><ul class="d-flex tw-gap-205 flex-wrap">
-                          <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">MARKETPLACE</a></li>
-                          <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">FREELANCE</a></li>
-                        </ul></div>
+                        <div>
+                          <h2 class="tw-text-605 fw-medium tw-mb-4">
+                            <a class="hover-text-main-two-600" href="https://www.brandcey.in/" target="_blank" rel="noopener noreferrer">Brandcey</a>
+                          </h2>
+                        </div>
+                        <div class="portfolio-three-list portfolio-list">
+                          <ul class="d-flex tw-gap-205 flex-wrap">
+                            <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">MARKETPLACE</a></li>
+                            <li><a class="text-uppercase text-heading fw-medium position-relative z-1 hover-bg-main-two-600 hover-border-main-two-600 hover-text-white tw-transition-3" href="#">FREELANCE</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="portfolio-three-button"><a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white" href="https://www.brandcey.in/" target="_blank" rel="noopener noreferrer"><i class="ph ph-arrow-up-right"></i></a></div>
+                      <div class="portfolio-three-button">
+                        <a class="portfolio-three-btn tw-w-8 tw-h-8 lh-1 d-inline-flex justify-content-center align-items-center text-heading rounded-circle hover-bg-main-two-600 hover-text-white"
+                           href="https://www.brandcey.in/" target="_blank" rel="noopener noreferrer">
+                          <i class="ph ph-arrow-up-right"></i>
+                        </a>
+                      </div>
                     </div>
                     <div class="portfolio-thumb not-hide-cursor fw-bold mb-0 tw-rounded-lg" data-cursor="View">
                       <a class="d-block cursor-hide tw-rounded-lg" href="https://www.brandcey.in/" target="_blank" rel="noopener noreferrer">
@@ -482,10 +648,11 @@
                     </div>
                   </div>
 
-                  <!-- Circle button -->
+                  <!-- Discover circle button -->
                   <div class="about-three-counter portfolio-three-counter d-inline-block position-absolute bottom-0 start-0">
                     <div class="tw-hover-btn-wrapper d-inline-block">
-                      <a class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden" href="#more-works">
+                      <a class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden"
+                         href="#more-works">
                         <span class="d-flex flex-column justify-content-center">
                           <span class="text-heading fw-bold tw-transition-3 tw-text-2xl fw-semibold">More <br />Works <i class="ph ph-arrow-up-right"></i></span>
                         </span>
@@ -493,19 +660,22 @@
                       </a>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- ==================== WORKS END ==================== -->
 
-        <!-- ==================== MORE WORKS (Hover-Reveal List) ==================== -->
+        <!-- ==================== MORE WORKS (Feature List with Hover-Reveal) ==================== -->
         <div id="more-works" class="feature-three-area py-120 position-relative z-1">
           <div class="container tw-container-1800-px">
             <div class="row">
               <div class="col-xl-12">
                 <div class="feature-three-wrapper hover__widget">
 
+                  <!-- Qrivna -->
                   <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="feature-three-item d-flex justify-content-between align-items-center">
                       <div class="feature-three-left d-flex align-items-center">
@@ -518,6 +688,7 @@
                     <div class="hover__reveal-bg bg-img" data-background-image="qrivna_demo_pro.png"></div>
                   </div>
 
+                  <!-- BrollWriter -->
                   <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="feature-three-item d-flex justify-content-between align-items-center">
                       <div class="feature-three-left d-flex align-items-center">
@@ -530,6 +701,7 @@
                     <div class="hover__reveal-bg bg-img" data-background-image="brollwriter_demo_pro.png"></div>
                   </div>
 
+                  <!-- Dhankathaa -->
                   <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="feature-three-item d-flex justify-content-between align-items-center">
                       <div class="feature-three-left d-flex align-items-center">
@@ -542,6 +714,7 @@
                     <div class="hover__reveal-bg bg-img" data-background-image="dhankathaa_demo_pro.png"></div>
                   </div>
 
+                  <!-- GCMR.IN -->
                   <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="feature-three-item d-flex justify-content-between align-items-center">
                       <div class="feature-three-left d-flex align-items-center">
@@ -554,6 +727,7 @@
                     <div class="hover__reveal-bg bg-img" data-background-image="assets-unifex/images/thumbs/portfolio-two-thumb1.jpg"></div>
                   </div>
 
+                  <!-- ESR Analyzer -->
                   <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="feature-three-item d-flex justify-content-between align-items-center">
                       <div class="feature-three-left d-flex align-items-center">
@@ -566,6 +740,7 @@
                     <div class="hover__reveal-bg bg-img" data-background-image="assets-unifex/images/thumbs/portfolio-two-thumb2.jpg"></div>
                   </div>
 
+                  <!-- Revenue Command Center -->
                   <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="feature-three-item d-flex justify-content-between align-items-center">
                       <div class="feature-three-left d-flex align-items-center">
@@ -578,6 +753,7 @@
                     <div class="hover__reveal-bg bg-img" data-background-image="assets-unifex/images/thumbs/portfolio-two-thumb3.jpg"></div>
                   </div>
 
+                  <!-- Vibe-Code Website Bug Tester -->
                   <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="feature-three-item d-flex justify-content-between align-items-center">
                       <div class="feature-three-left d-flex align-items-center">
@@ -590,6 +766,7 @@
                     <div class="hover__reveal-bg bg-img" data-background-image="assets-unifex/images/thumbs/portfolio-two-thumb4.jpg"></div>
                   </div>
 
+                  <!-- Orchids -->
                   <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="feature-three-item d-flex justify-content-between align-items-center">
                       <div class="feature-three-left d-flex align-items-center">
@@ -602,6 +779,7 @@
                     <div class="hover__reveal-bg bg-img" data-background-image="assets-unifex/images/thumbs/portfolio-thumb1.jpg"></div>
                   </div>
 
+                  <!-- TheTapeChart -->
                   <div class="feature-three-single hover__reveal-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                     <div class="feature-three-item d-flex justify-content-between align-items-center">
                       <div class="feature-three-left d-flex align-items-center">
@@ -619,6 +797,7 @@
             </div>
           </div>
         </div>
+        <!-- ==================== MORE WORKS END ==================== -->
 
         <!-- ==================== FOOTER / CONTACT ==================== -->
         <section id="contact" class="footer-three-area pt-120 tw-pb-10 position-relative z-1">
@@ -627,10 +806,13 @@
               <div class="col-xl-5 col-lg-6">
                 <div class="footer-three-top-left tw-me-25" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                   <div class="tw-mb-9">
-                    <h2 class="tw-text-15 text-white tw-char-animation">Let's create something meaningful</h2>
+                    <h2 class="tw-text-15 text-white tw-char-animation">
+                      Let's create something meaningful
+                    </h2>
                   </div>
                   <div class="d-inline-flex align-items-center tw-gap-6 tw-mb-10 flex-wrap">
-                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white" href="mailto:abhigyannsaikia@gmail.com">abhigyannsaikia@gmail.com</a>
+                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
+                       href="mailto:abhigyannsaikia@gmail.com">abhigyannsaikia@gmail.com</a>
                   </div>
                   <div class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6">
                     <div class="footer-three-top-thumb tw-w-160-px">
@@ -643,8 +825,18 @@
                       </div>
                       <div class="footer-three-social">
                         <ul class="d-flex align-items-center tw-gap-1">
-                          <li><a class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading" href="https://github.com/abhigyansaikiaa" target="_blank" rel="noopener noreferrer"><i class="ph ph-github-logo"></i></a></li>
-                          <li><a class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading" href="https://www.linkedin.com/in/abhigyan-saikia-26641227b" target="_blank" rel="noopener noreferrer"><i class="ph ph-linkedin-logo"></i></a></li>
+                          <li>
+                            <a class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
+                               href="https://github.com/abhigyansaikiaa" target="_blank" rel="noopener noreferrer">
+                              <i class="ph ph-github-logo"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="tw-w-11 tw-h-101 lh-1 d-inline-flex align-items-center justify-content-center tw-rounded-lg tw-text-xl text-heading hover-bg-main-600 hover-text-heading"
+                               href="https://www.linkedin.com/in/abhigyan-saikia-26641227b" target="_blank" rel="noopener noreferrer">
+                              <i class="ph ph-linkedin-logo"></i>
+                            </a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -657,22 +849,29 @@
                     <div class="row">
                       <div class="col-xl-12">
                         <div class="position-relative tw-mb-7">
-                          <input type="text" name="name" class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2" placeholder="Your Name" />
+                          <input type="text" name="name"
+                            class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
+                            placeholder="Your Name" />
                         </div>
                       </div>
                       <div class="col-xl-12">
                         <div class="position-relative tw-mb-7">
-                          <input type="email" name="email" class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2" placeholder="Email Address" />
+                          <input type="email" name="email"
+                            class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
+                            placeholder="Email Address" />
                         </div>
                       </div>
                       <div class="col-xl-12">
                         <div class="position-relative tw-mb-7">
-                          <textarea name="message" class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 focus-tw-placeholder-text-hidden tw-placeholder-transition-2" placeholder="Your Message"></textarea>
+                          <textarea name="message"
+                            class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
+                            placeholder="Your Message"></textarea>
                         </div>
                       </div>
                       <div class="col-xl-12">
                         <div class="contact-button">
-                          <button type="submit" class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg">
+                          <button type="submit"
+                            class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg">
                             send message
                           </button>
                         </div>
@@ -714,6 +913,7 @@
             </div>
           </div>
 
+          <!-- Big name at bottom -->
           <div>
             <div class="container tw-container-1800-px">
               <div class="row">
@@ -725,10 +925,12 @@
               </div>
             </div>
           </div>
+
           <div>
             <img class="position-absolute top-0 start-0 z-n1" src="assets-unifex/images/shapes/footer-three-bg-shape.png" alt="shape" />
           </div>
         </section>
+        <!-- ==================== FOOTER END ==================== -->
 
       </div>
     </div>
